@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <title>Temperature Unit Converter</title>
+  </head>
+  <body>
+    <h1>Temperature Unit Converter</h1>
+    <hr />
+    <div id="main">
+      <input
+        required
+        type="number"
+        id="num"
+        placeholder="Enter temperature you would like to convert"
+      />
+      <div class="mainRadio">
+        <div id="radio">
+          <input
+            type="radio"
+            id="celToFah"
+            name="temp"
+            value="CelsiusToFahrenheit"
+            autofocus
+          />
+          <label for="celToFah">Celsius to Fahrenheit</label>
+          <br />
+          <br />
+          <input
+            type="radio"
+            id="kelToFah"
+            name="temp"
+            value="KelvinToFahrenheit"
+          />
+          <label for="kelToFah">Kelvin to Fahrenheit</label>
+          <br />
+          <br />
+          <input
+            type="radio"
+            id="fahToCel"
+            name="temp"
+            value="FahrenheitToCelcius"
+          />
+          <label for="fahToCel">Fahrenheit to Celcius</label>
+          <br />
+        </div>
+
+        <div id="radio">
+          <input
+            type="radio"
+            id="celToKel"
+            name="temp"
+            value="CelsiusToKelvin"
+          />
+          <label for="celToKel">Celsius to Kelvin</label>
+          <br />
+          <br />
+          <input
+            type="radio"
+            id="kelToCel"
+            name="temp"
+            value="KelvinToCelcius"
+          />
+          <label for="kelToFah">Kelvin to Celcius</label>
+          <br />
+          <br />
+          <input
+            type="radio"
+            id="fahToKel"
+            name="temp"
+            value="FahrenheitToKelvin"
+          />
+          <label for="fahToKel">Fahrenheit to Kelvin</label>
+          <br />
+        </div>
+      </div>
+      <input type="submit" value="Convert" id="submit" />
+      <h2 id="result"><strong></strong></h2>
+    </div>
+    <hr />
+    <footer>
+      <p>
+        This project was coded by
+        <a href="https://github.com/NombuK/" target="_blank"
+          ><strong>Nombulelo Khumalo</strong></a
+        >
+        with 💜 and is open-sourced on
+        <a
+          href="https://github.com/NombuK/temprature-unit-converter"
+          target="_blank"
+        >
+          <strong>GitHub</strong></a
+        >
+        and hosted on
+        <a href="https://temprature-unit-converter-nk.netlify.app/" target="_blank">
+          <strong>Netlify</strong>
+        </a>
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
